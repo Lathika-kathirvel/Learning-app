@@ -1,25 +1,26 @@
-
 # LearningApp – AI-Powered Learning and Interview Preparation
 
 LearningApp is an Android application developed using Kotlin and Android Studio. It helps students improve their aptitude skills and prepare for HR and technical interviews with AI-assisted features.
 
+**GitHub Repository:** [Learning-app](https://github.com/Lathika-kathirvel/Learning-app)
+
 ## 🚀 Features
 
-- User Registration and Login
-- Firebase Authentication
-- Student Dashboard
-- Aptitude Practice
-- Aptitude Questions and Results
-- Technical Interview Preparation
-- AI-Generated Technical Questions
-- HR Interview Preparation
-- Resume-Based Interview Preparation
-- PDF Resume Text Extraction
-- AI Interview Performance Analysis
-- User Profile Management
-- Recent Activity Tracking
+- User registration and login
+- Firebase authentication
+- Student dashboard
+- Aptitude practice, questions, and results
+- Technical interview preparation
+- AI-assisted technical question generation
+- HR interview preparation
+- Resume-based interview preparation
+- PDF resume text extraction
+- AI interview performance analysis and feedback
+- User profile management
+- Recent activity tracking
 
 ## 🛠️ Technologies Used
+
 
 | Technology | Purpose |
 |---|---|
@@ -34,7 +35,7 @@ LearningApp is an Android application developed using Kotlin and Android Studio.
 | Kotlin Coroutines | Background operations |
 | RecyclerView | Displaying lists |
 | PDFBox Android | PDF text extraction |
-| Groq AI | AI-powered question generation |
+| Groq AI | AI-powered question generation (where configured) |
 
 ## 📱 Application Modules
 
@@ -43,68 +44,105 @@ LearningApp is an Android application developed using Kotlin and Android Studio.
 - Login functionality
 - Firebase authentication
 
+
 ### 2. Dashboard
 - Centralized learning dashboard
-- Navigation to different learning modules
+- Navigation to learning modules
 - Recent activity
 
 ### 3. Aptitude Practice
-- Select aptitude practice settings
+- Configure aptitude practice sessions
 - Answer aptitude questions
 - Calculate scores
 - Display results
 
 ### 4. Technical Interview
 - Configure technical interview sessions
-- Generate technical questions
-- Practice technical MCQs
+- Generate or display technical questions
+- Practise technical MCQs
 - View interview results
 
 ### 5. HR Interview
 - HR interview preparation
-- Practice common HR questions
+- Practise common HR questions
 
 ### 6. Resume-Based Interview
-- Upload PDF resume
+- Upload a PDF resume
 - Extract resume text
 - Generate interview-related questions
 
 ### 7. AI Interview Analysis
-- Analyze interview performance
-- Display performance insights
+- Review interview performance
+- Display feedback and performance insights
 
 ### 8. Profile Management
 - View user details
 - Update profile information
 
+## 📸 Application Screenshots
+
+The following screenshots are available in the `Screenshot` folder of this repository.
+
+### Login Screen
+![Login Screen](Screenshot/Login.jpeg)
+
+### Dashboard
+![Dashboard](Screenshot/Dashboard.jpeg)
+
+
+### AI-Generated Questions
+![AI Questions](Screenshot/AI%20ques.jpeg)
+
+### AI Feedback
+![AI Feedback](Screenshot/AI%20feedback.jpeg)
+
+### Interview Details
+![Interview Details](Screenshot/Interview%20details.jpeg)
+
+### Profile
+![Profile](Screenshot/Profile.jpeg)
+
+## 🎧 Output File
+
+The repository includes an output file named `Output Video.mp3`.
+
+[Open or download the LearningApp output audio (MP3)](Output%20Video.mp3)
+
+> Note: The file has an `.mp3` extension, so it is an audio file, not a video. If you want to show an application demonstration video in this section, upload the actual video as an `.mp4` file and link it here, for example: `[Watch LearningApp Demo](assets/LearningApp-Demo.mp4)`.
+
 ## 📂 Project Structure
+
 
 ```text
 LearningApp/
-│
 ├── app/
 │   ├── src/
 │   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/example/learningapp/
-│   │       │       ├── api/
-│   │       │       ├── DashboardActivity.kt
-│   │       │       ├── AptitudeSetupActivity.kt
-│   │       │       ├── AptitudeQuestionsActivity.kt
-│   │       │       ├── AptitudeResultActivity.kt
-│   │       │       ├── TechnicalInterviewSetupActivity.kt
-│   │       │       ├── GeneratedQuestionsActivity.kt
-│   │       │       ├── HRInterviewActivity.kt
-│   │       │       ├── AIResumeInterviewActivity.kt
-│   │       │       ├── AIInterviewAnalysisActivity.kt
-│   │       │       └── ProfileActivity.kt
-│   │       │
+│   │       ├── java/com/example/learningapp/
+│   │       │   ├── api/
+│   │       │   ├── DashboardActivity.kt
+│   │       │   ├── AptitudeSetupActivity.kt
+│   │       │   ├── AptitudeQuestionsActivity.kt
+│   │       │   ├── AptitudeResultActivity.kt
+│   │       │   ├── TechnicalInterviewSetupActivity.kt
+│   │       │   ├── GeneratedQuestionsActivity.kt
+│   │       │   ├── HRInterviewActivity.kt
+│   │       │   ├── AIResumeInterviewActivity.kt
+│   │       │   ├── AIInterviewAnalysisActivity.kt
+│   │       │   └── ProfileActivity.kt
 │   │       ├── res/
 │   │       └── AndroidManifest.xml
-│   │
 │   └── build.gradle.kts
-│
 ├── gradle/
+
+├── Screenshot/
+│   ├── AI feedback.jpeg
+│   ├── AI ques.jpeg
+│   ├── Dashboard.jpeg
+│   ├── Interview details.jpeg
+│   ├── Login.jpeg
+│   └── Profile.jpeg
+├── Output Video.mp3
 ├── build.gradle.kts
 ├── settings.gradle.kts
 ├── gradle.properties
@@ -122,54 +160,42 @@ git clone https://github.com/Lathika-kathirvel/Learning-app.git
 ### Step 2: Open in Android Studio
 
 1. Open Android Studio.
-2. Select Open Project.
-3. Choose the cloned LearningApp folder.
-4. Wait for Gradle synchronization.
+2. Select **Open**.
+3. Choose the cloned `Learning-app` folder.
+4. Wait for Gradle synchronization to complete.
 
 ### Step 3: Firebase Configuration
 
 1. Create a Firebase project.
-2. Register your Android application.
-3. Add the `google-services.json` file inside the app directory.
+2. Register your Android application in Firebase.
+3. Add the required `google-services.json` file inside the `app/` directory.
 4. Enable Firebase Authentication.
-5. Configure Cloud Firestore if required.
+5. Configure Cloud Firestore if it is used by the application.
 
 ### Step 4: Configure AI Integration
 
-Configure your Groq API credentials securely.
-
-Never upload API keys or passwords to GitHub.
+Configure the required AI service credentials securely. Do not hard-code API keys in Kotlin source files or commit credentials to GitHub. If a key has been exposed, revoke it and create a replacement.
 
 ### Step 5: Run the Application
 
 1. Connect an Android device or start an emulator.
-2. Select the application configuration.
-3. Click the Run button.
 
-## 🎥 Output Video
-
-Watch the application demonstration:
-
-[LearningApp Demo Video](assets/LearningApp-Demo.mp4)
-
+2. Select the application run configuration.
+3. Click **Run** in Android Studio.
 
 ## 🔐 Security
 
 - Do not expose API keys in source code.
 - Do not upload passwords or private credentials.
 - Use secure configuration for API integrations.
-- Keep sensitive Firebase configuration and signing credentials protected.
+- Keep signing credentials and other sensitive configuration files out of source control.
 
 ## 👩‍💻 Developed By
 
 **Lathika Kathirvel**
 
-GitHub: https://github.com/Lathika-kathirvel
-
-## 🔗 GitHub Repository
-
-https://github.com/Lathika-kathirvel/Learning-app
+GitHub: [Lathika-kathirvel](https://github.com/Lathika-kathirvel)
 
 ## 📄 License
 
-This project is developed for educational purposes.
+This project is developed for educational purposes. No separate open-source license has been specified.
