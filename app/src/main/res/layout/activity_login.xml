@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:isScrollContainer="true"
+    android:scrollbars="none"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:descendantFocusability="afterDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp">
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="210dp"
+            android:layout_height="58dp"
+            android:src="@drawable/auromind_logo"
+            android:scaleType="fitCenter"
+            android:contentDescription="AuromindAI Logo" />
+
+        <!-- LEARNING IMAGE -->
+        <ImageView
+            android:id="@+id/loginImage"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/learning_image"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:contentDescription="Learning illustration" />
+
+        <!-- WELCOME TEXT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Welcome Back"
+            android:textColor="#1E293B"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Log in to continue your AI mock interviews"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+
+        <!-- EMAIL INPUT -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:hintEnabled="false"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxStrokeColor="@color/text_input_stroke"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:startIconDrawable="@android:drawable/ic_dialog_email"
+            app:startIconTint="#8A9AAF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#17243B"
+                android:textColorHint="#8993A3"
+                android:textSize="14sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- PASSWORD INPUT -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:hintEnabled="false"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxStrokeColor="@color/text_input_stroke"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@android:drawable/ic_lock_lock"
+            app:startIconTint="#8A9AAF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#17243B"
+                android:textColorHint="#8993A3"
+                android:textSize="14sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- FORGOT PASSWORD -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="6dp"
+            android:padding="5dp"
+            android:text="Forgot password?"
+            android:textColor="#F26722"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- LOGIN BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#F26722"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+
+        <!-- SIGN UP SECTION -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textColor="#65758B"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="#F26722"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
