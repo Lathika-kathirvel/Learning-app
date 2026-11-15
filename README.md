@@ -152,8 +152,6 @@ Watch the application demonstration:
 
 [LearningApp Demo Video](assets/LearningApp-Demo.mp4)
 
-Note: Upload your actual MP4 demonstration video to the assets folder to activate this link.
-
 
 ## 🔐 Security
 
